@@ -24,7 +24,9 @@ export class Blank extends React.Component {
   render = () => (
     <View style={styles.View_1}>
       <View style={styles.View_5}>
-        <Text>Sample text content</Text>
+        <Text>Sample text content 1</Text>
+        <Text>Sample text content 2</Text>
+        <Text>Sample text content 3</Text>
       </View>
       <View style={styles.View_7}>
         <View>
@@ -41,9 +43,7 @@ export class Blank extends React.Component {
           <Button title="Press me!" onPress={() => alert("Pressed!")} />
         </View>
       </View>
-      <View style={styles.View_9}>
-        <Text>Sample text content</Text>
-      </View>
+      <View style={styles.View_9} />
     </View>
   )
 }
@@ -57,14 +57,15 @@ const styles = StyleSheet.create({
     borderStyle: "dotted"
   },
   Text_91: {},
+  Text_95: {},
+  Text_99: {},
   View_7: { width: "60%" },
   View_18: {},
   Text_37: {},
   TextInput_36: {},
   View_22: {},
   Button_41: {},
-  View_9: { width: "20%" },
-  Text_102: {}
+  View_9: { width: "20%" }
 })
 
 function mapStateToProps(state) {
