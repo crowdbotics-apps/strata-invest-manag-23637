@@ -23,8 +23,10 @@ export class Blank extends React.Component {
   state = { TextInput_36: "" }
   render = () => (
     <View style={styles.View_1}>
-      <View />
-      <View>
+      <View style={styles.View_5}>
+        <Text>Sample text content</Text>
+      </View>
+      <View style={styles.View_7}>
         <View>
           <Text>Тестовое окно ввода</Text>
           <TextInput
@@ -39,21 +41,30 @@ export class Blank extends React.Component {
           <Button title="Press me!" onPress={() => alert("Pressed!")} />
         </View>
       </View>
-      <View />
+      <View style={styles.View_9}>
+        <Text>Sample text content</Text>
+      </View>
     </View>
   )
 }
 
 const styles = StyleSheet.create({
-  View_1: { flexDirection: "row" },
-  View_5: {},
-  View_7: {},
+  View_1: { width: 0, flexDirection: "row", alignContent: "flex-start" },
+  View_5: {
+    width: "20%",
+    height: 100,
+    borderColor: "#d1f4ff",
+    borderStyle: "dotted"
+  },
+  Text_91: {},
+  View_7: { width: "60%" },
   View_18: {},
   Text_37: {},
   TextInput_36: {},
   View_22: {},
   Button_41: {},
-  View_9: {}
+  View_9: { width: "20%" },
+  Text_102: {}
 })
 
 function mapStateToProps(state) {
